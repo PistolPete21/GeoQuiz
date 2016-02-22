@@ -5,15 +5,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Arrays;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -40,7 +37,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private int mCurrentIndex = 0;
     private boolean mIsCheater;
-    private boolean[] mCheatBank = new boolean[mQuestionBank.length];
+    private boolean[] mCheatBank = new boolean[mQuestionBank.length]; //stores cheat data
     private String[] mCheatString = new String[mQuestionBank.length+1];
 
 
