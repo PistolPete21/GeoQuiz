@@ -29,14 +29,14 @@ public class CheatActivity extends AppCompatActivity {
     private Button mShowAnswer;
     private Boolean mIsCheater;
     @Override
+    //First Challenge: Saved value of mIsCheater before user rotates the screen to destroy the activity
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat);
         //First Challenge: Restore the value of mIsCheater back when the cheatActivity is recreated
-        if (savedInstanceState != null) {
-            setAnswerShownResult(savedInstanceState.getBoolean(KEY_CHEATER));
-        }
+        
         mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
 
         mAnswerTextView = (TextView)findViewById(R.id.answer_text_view);
