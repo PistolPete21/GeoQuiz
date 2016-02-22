@@ -77,7 +77,14 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_quiz);
+        if (savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+            // Second Challenge and 3rd : Gets the data of mCheatBank back when the activity is remade
+            for (int i = 1 ; i<=mQuestionBank.length;i++) {
+                mCheatBank[i-1]=savedInstanceState.getBoolean("CHEATSTRING"+i,false);
+            }
 
+        }
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
