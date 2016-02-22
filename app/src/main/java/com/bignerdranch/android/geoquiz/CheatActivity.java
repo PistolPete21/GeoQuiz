@@ -29,11 +29,7 @@ public class CheatActivity extends AppCompatActivity {
     private Button mShowAnswer;
     private Boolean mIsCheater;
     @Override
-    //First Challenge: Saved value of mIsCheater before user rotates the screen to destroy the activity
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
-        savedInstanceState.putBoolean(KEY_CHEATER, mIsCheater);
-    }
+    
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
