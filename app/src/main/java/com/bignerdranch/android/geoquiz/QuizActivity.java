@@ -147,7 +147,7 @@ public class QuizActivity extends AppCompatActivity {
             }
 
         }
-        //mCheatBank[mCurrentIndex] = CheatActivity.wasAnswerShown(data);
+        mCheatBank[mCurrentIndex] = CheatActivity.wasAnswerShown(data);
     }
 
     public void onSaveInstanceState(Bundle savedInstanceState) {
