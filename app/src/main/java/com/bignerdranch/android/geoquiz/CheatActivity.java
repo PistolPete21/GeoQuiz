@@ -29,7 +29,6 @@ public class CheatActivity extends AppCompatActivity {
     private Button mShowAnswer;
     private Boolean mIsCheater;
     @Override
-    
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
